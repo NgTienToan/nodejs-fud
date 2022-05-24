@@ -1,0 +1,21 @@
+GET http://localhost:5000/todos
+###
+
+POST http://localhost:5000/todos
+Content-Type: application/json
+
+{
+  "title": "Post 2",
+  "content": "Day la post 2"
+}
+###
+
+GET http://localhost:5000/todos/628c4c88264028ec835d9fb0
+###
+
+PUT http://localhost:5000/todos/628c4c88264028ec835d9fb0
+Content-Type: application/json
+
+{
+  "status": true
+}
